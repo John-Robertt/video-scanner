@@ -11,12 +11,6 @@ const cleanNfoFile = (filePath) => {
     // 读取文件内容
     const content = readFileSync(filePath, 'utf8')
 
-    // // 先删除包含 <website> 的行
-    // let processedContent = content
-    //   .split('\n')
-    //   .filter((line) => !line.toLowerCase().includes('<website>'))
-    //   .join('\n')
-
     // // 替换 MPAA 评级
     // processedContent = processedContent.replace(
     //   /<mpaa>NC-17<\/mpaa>/i,
