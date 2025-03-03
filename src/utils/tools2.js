@@ -19,8 +19,6 @@ const CONFIG = {
     '.mpg',
     '.mpeg',
     '.3gp',
-    '.ts',
-    '.mts',
   ],
   excludeDirs: ['node_modules', 'temp', 'downloads', '@eaDir'],
   // 添加NFO文件类型
