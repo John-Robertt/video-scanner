@@ -17,17 +17,6 @@ const cleanNfoFile = (filePath) => {
     //   '<mpaa>R18+</mpaa>'
     // )
 
-    // // 删除分钟
-    // processedContent = processedContent.replace(/ 分鍾/i, '')
-    // processedContent = processedContent.replace(/ {8}<actor>/i, '    <actor>')
-    // processedContent = processedContent.replace(/ {8}<tag>/i, '    <tag>')
-    // processedContent = processedContent.replace(/ {8}<genre>/i, '    <genre>')
-    // processedContent = processedContent.replace(/ {6}<name>/gi, '    <name>')
-    // processedContent = processedContent.replace(/ {6}<role>/gi, '    <role>')
-    // // processedContent = processedContent.replace(/ {4}</gi, '  <')
-    // // 删除标签
-    // processedContent = processedContent.replace(/<label><\/label>/i, '')
-
     // 再移除空白行，保留有内容的行
     const cleanedContent = content
       .split('\n')
