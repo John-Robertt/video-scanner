@@ -1,0 +1,46 @@
+# 要处理的目录（如果为空则使用当前目录）
+targetDir: ''
+
+# 输出目录（如果为空则使用targetDir）
+outputDir: ''
+
+# 最大文件大小限制
+maxFileSize: 50GB
+
+# 最大递归深度
+maxDepth: 10
+
+# 是否跳过隐藏文件
+skipHiddenFiles: true
+
+# 测试模式（不实际移动文件）
+dryRun: false
+
+# 并发处理数量
+concurrency: 5
+
+# 排除的目录
+excludeDirs:
+  - node_modules
+  - temp
+  - downloads
+  - '@eaDir'
+
+# 是否使用安全删除（移动到回收站）
+useSafeDelete: true
+
+# 要处理的文件类型
+fileTypes:
+  - .mp4
+  - .avi
+  - .mkv
+  - .mov
+  - .wmv
+  - .flv
+  - .webm
+  - .m4v
+  - .mpg
+  - .mpeg
+  - .3gp
+  - .ts
+  - .mts

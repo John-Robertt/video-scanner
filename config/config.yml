@@ -1,0 +1,63 @@
+# 基础配置
+base:
+  # 源文件目录，支持相对路径和绝对路径
+  sourceDir: ''
+  # 输出目录
+  outputDir: ''
+  # 是否跳过隐藏文件
+  skipHiddenFiles: true
+  # 排除的目录
+  excludeDirs:
+    - 'node_modules'
+    - 'temp'
+    - 'downloads'
+    - '@eaDir'
+    - 'output'
+    - '.log'
+    - '.cache'
+
+# 缓存配置
+cache:
+  # 缓存目录路径，支持相对路径（相对于 outputDir 的上一级目录）
+  dir: '.cache'
+  # 最大内存缓存项数量
+  maxMemoryItems: 1000
+  # 缓存过期时间（毫秒）
+  maxAge: 86400000 # 24小时
+
+# 文件类型配置
+fileTypes:
+  # 支持的视频文件扩展名
+  video:
+    - '.mp4'
+    - '.avi'
+    - '.mkv'
+    - '.mov'
+    - '.wmv'
+    - '.flv'
+    - '.webm'
+    - '.m4v'
+    - '.mpg'
+    - '.mpeg'
+    - '.3gp'
+
+# 刮削器配置
+scraper:
+  # 默认刮削源
+  default: 'javdb'
+  # JavDB配置
+  javdb:
+    baseUrl: 'https://javdb.com'
+    cookieFile: 'config/cookie.txt'
+    timeout: 10000
+    retry: 3
+    retryDelay: 1000
+
+# 日志配置
+log:
+  # 是否启用文件日志
+  enabled: true
+  # 日志文件路径，支持相对路径（相对于 outputDir 的上一级目录）
+  path: '.log'
+  # 日志文件名格式
+  filename: 'app.log'
